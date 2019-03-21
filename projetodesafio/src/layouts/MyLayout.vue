@@ -33,25 +33,21 @@
         inset-delimiter
       >
         <q-list-header>Essential Links</q-list-header>
-        <q-item @click.native="openURL('http://quasar-framework.org')">
-          <q-item-side icon="school" />
-          <q-item-main label="Docs" sublabel="quasar-framework.org" />
+        <q-item to="sobre">
+          <q-item-side icon="work" />
+          <q-item-main label="Sobre" sublabel="Descrição Sobre" />
+        </q-item >
+        <q-item to="galeria">
+          <q-item-side icon="photo_library" />
+          <q-item-main label="Galeria" sublabel="Descrição Galeria" />
         </q-item>
-        <q-item @click.native="openURL('https://github.com/quasarframework/')">
-          <q-item-side icon="code" />
-          <q-item-main label="GitHub" sublabel="github.com/quasarframework" />
+        <q-item to="portfolio">
+          <q-item-side icon="accessibility" />
+          <q-item-main label="Portfolio" sublabel="Descrição Portfolio" />
         </q-item>
-        <q-item @click.native="openURL('https://discord.gg/5TDhbDg')">
-          <q-item-side icon="chat" />
-          <q-item-main label="Discord Chat Channel" sublabel="https://discord.gg/5TDhbDg" />
-        </q-item>
-        <q-item @click.native="openURL('http://forum.quasar-framework.org')">
-          <q-item-side icon="record_voice_over" />
-          <q-item-main label="Forum" sublabel="forum.quasar-framework.org" />
-        </q-item>
-        <q-item @click.native="openURL('https://twitter.com/quasarframework')">
-          <q-item-side icon="rss feed" />
-          <q-item-main label="Twitter" sublabel="@quasarframework" />
+        <q-item to="contato">
+          <q-item-side icon="contacts" />
+          <q-item-main label="Contato" sublabel="Descrição Contato" />
         </q-item>
       </q-list>
     </q-layout-drawer>
